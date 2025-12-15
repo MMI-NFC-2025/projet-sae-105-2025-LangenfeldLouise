@@ -1,0 +1,18 @@
+/* Collection 1 */
+:root {
+    /* color */
+    --background: #eeeeee;
+    --black: #000000;
+    --black-blue: #041024;
+    --blue: #0d1782;
+    --green: #9dcba2;
+    --light: #ffffff;
+    --txt-green: #007224;
+    /* number */
+    --12: var(--scale-01);
+    --16: var(--body-size-medium);
+    --24: var(--scale-05);
+    /* string */
+    --bold: var(--static-weight-bold);
+    --regular: var(--weight-regular-italic);
+}
