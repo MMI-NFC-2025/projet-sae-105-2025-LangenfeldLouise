@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home En</title>
-    <link rel="stylesheet" href="/src/css/styles.css">
-    <link rel="icones" type="image/png" href="/assets/img/icons/favicon/favicon-96x96.png" sizes="96*96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home En</title>
+        <link rel="stylesheet" href="/src/css/styles.css">
+        <link rel="icones" type="image/png" href="/assets/img/icons/favicon/favicon-96x96.png" sizes="96*96" />
+        <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+    </head>
 
-<body>
-    <a href="../fr/index.html" onclick="document.cookie = 'nf_lang=fr; path=/ ; SameSite=Strict'">FR</a>
-    <header class="site-header">
-        <div class="header-inner">
+    <body>
+        <a href="../fr/article4FR.html" onclick="document.cookie = 'nf_lang=en; path=/ ; SameSite=Strict'">
+            <img src="/assets/img/icons/gb/ENbleu.svg" alt="">
+        </a>
+        <header class="site-header">
+            <div class="header-inner">
+                <a href="/en/index.html" class="logo-link">
+                    <img src="/assets/img/icons/memary.svg" alt="MéMary" class="logo-img">
+                </a>
+                <button class="hamburger" aria-label="Ouvrir le menu"><img src="/assets/img/icons/menu.svg" alt="menu"
+                        width="18" height="18"></button>
+            </div>
+        </header>
+
+        <nav class="mobile-menu" aria-hidden="true">
+            <div class="menu-header">
+                <a href="/en/index.html" class="menu-logo">
+                    <img src="/assets/img/icons/memary.svg" alt="MéMary" style="height:32px;width:auto;">
+                </a>
+                <button class="menu-close" aria-label="Fermer le menu"><img src="/assets/img/icons/ferme.svg"
+                        alt="fermer"></button>
+            </div>
+            <ul class="menu-list">
+                <li><a href="/en/contactGB.html">Contact</a></li>
+                <li><a href="/en/article1GB.html">The discovery of paired</a></li>
+                <li><a href="/en/article2GB.html">Calkins and the matilda effect</a></li>
+                <li><a href="/en/article3GB.html">The book</a></li>
+                <li><a href="/en/article4GB.html">The film</a></li>
+                <li><a href="/en/article5GB.html">Women scientists in books</a></li>
+            </ul>
+        </nav>
+        <main>
+            <button class="btn__home">
+                <a href="/en/index.html">
+                    <img src="/assets/img/icons/gb/btn-home.svg" alt="button to home">
+                </a>
+            </button>
+        
+        </main>
+        
+        <footer class="footer">
             <a href="/en/index.html" class="logo-link">
                 <img src="/assets/img/icons/memary.svg" alt="MéMary" class="logo-img">
             </a>
-            <button class="hamburger" aria-label="Ouvrir le menu"><img src="/assets/img/icons/menu.svg" alt="menu"
-                    width="18" height="18"></button>
-        </div>
-    </header>
-
-    <nav class="mobile-menu" aria-hidden="true">
-        <div class="menu-header">
-            <a href="/en/index.html" class="menu-logo">
-                <img src="/assets/img/icons/memary.svg" alt="MéMary" style="height:32px;width:auto;">
+            <p class="footer__text">Project completed in 2025 as part of an educational exercise at the MMi department in
+                Montbéliard. Louise LANGENFELD A2 louiselangenfeld300@gmail.com</p>
+            <a class="footer__logo">
+                <img src="/assets/img/icons/mmi-blanc.svg" alt="logo mmi">
             </a>
-            <button class="menu-close" aria-label="Fermer le menu"><img src="/assets/img/icons/ferme.svg"
-                    alt="fermer"></button>
-        </div>
-        <ul class="menu-list">
-            <li><a href="/en/contactGB.html">Contact</a></li>
-            <li><a href="/en/article1GB.html">The discovery of paired</a></li>
-            <li><a href="/en/article2GB.html">Calkins and the matilda effect</a></li>
-            <li><a href="/en/article3GB.html">The book</a></li>
-            <li><a href="/en/article4GB.html">The film</a></li>
-            <li><a href="/en/article5GB.html">Women scientists in books</a></li>
-        </ul>
-    </nav>
+        </footer>
+    </body>
+</html>
