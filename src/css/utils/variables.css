@@ -21,3 +21,7 @@
     --staatliches-regular: "Staatliches", sans-serif;
     --roboto: "Roboto", sans-serif;
 }
+
+footer{
+    background-color: var(--black-blue);
+}
