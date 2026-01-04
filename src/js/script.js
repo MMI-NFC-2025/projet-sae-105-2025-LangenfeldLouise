@@ -48,3 +48,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+//liste qui déroule
+const accordions = document.querySelectorAll(".accordion");
+
+accordions.forEach(accordion => {
+    const btn = accordion.querySelector(".accordion-btn");
+    const content = accordion.querySelector(".accordion-content");
+
+    if (btn && content) {
+        btn.addEventListener("click", () => {
+            const isOpen = content.classList.toggle("open");
+            btn.setAttribute("aria-expanded", isOpen);
+        });
+    }
+});
