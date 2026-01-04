@@ -9,10 +9,14 @@
     --light: #ffffff;
     --txt-green: #007224;
     /* number */
-    --12: var(--scale-01);
-    --16: var(--body-size-medium);
-    --24: var(--scale-05);
+    --size-12: 0.75rem;
+    --size-16: 1rem;
+    --size-24: 1.5rem;
     /* string */
     --bold: var(--static-weight-bold);
     --regular: var(--weight-regular-italic);
+    
+    /*Polices de caractère*/
+    --staatliches-regular: "Staatliches", sans-serif;
+    --roboto: "Roboto", sans-serif;
 }

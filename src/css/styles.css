@@ -1,0 +1,18 @@
+/* Vendors */
+
+/* Utils */
+@import "utils/variables.css";
+
+/* Base */
+@import "base/normalize.css";
+
+/* Layout */
+@import "layout/header.css";
+@import "layout/footer.css";
+
+/* Components */
+@import "components/acordeon.css";
+@import "components/bouton.css";
+@import "components/carousel.css";
+@import "components/liste.css";
+@import "components/menu.css";

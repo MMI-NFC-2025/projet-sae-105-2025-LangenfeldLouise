@@ -1,0 +1,24 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--light);
+    border-bottom: 1px solid var(--black-blue);
+    z-index: 1000;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+}
+
+.logo-img {
+    height: 32px;
+    width: auto;
+}
+
+.header__langage img {
+    height: 24px;
+}
