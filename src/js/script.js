@@ -1,3 +1,4 @@
+//menu
 document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.getElementById('menuToggle');
     const menuClose = document.getElementById('menuClose');
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         overlay.classList.add('active');
         mobileMenu.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
+        menuToggle.classList.add('active');
     }
 
     function closeMenu() {
@@ -25,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         overlay.classList.remove('active');
         mobileMenu.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
+        menuToggle.classList.remove('active');
     }
 
     menuToggle.addEventListener('click', openMenu);
@@ -47,6 +50,11 @@ document.addEventListener('DOMContentLoaded', function () {
             closeMenu();
         }
     });
+
+    // Ensure overflow is reset if menu is not active
+    if (!mobileMenu.classList.contains('active')) {
+        document.body.style.overflow = '';
+    }
 });
 
 //liste qui déroule

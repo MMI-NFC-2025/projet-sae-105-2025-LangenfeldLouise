@@ -174,7 +174,7 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: inherit;
+    font-family: var(--roboto);
     /* 1 */
     font-size: 100%;
     /* 1 */
