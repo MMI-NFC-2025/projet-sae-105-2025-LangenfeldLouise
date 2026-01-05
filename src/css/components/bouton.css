@@ -27,6 +27,7 @@
     height: auto;
     object-fit: contain;
     border: transparent;
+    margin-bottom: 10px;
 }
 
 /* Bouton retour haut de page */

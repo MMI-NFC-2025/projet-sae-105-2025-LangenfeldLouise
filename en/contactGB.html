@@ -15,153 +15,142 @@
 </head>
 
 <body>
-    <a class="header__langage" href="../fr/contactFR.html"
+    <a class="header__langage" href="../en/contactGB.html"
         onclick="document.cookie = 'nf_lang=en; path=/ ; SameSite=Strict'">
-        <img src="/assets/img/icons/gb/ENbleu.svg" alt="">
+        <img src="/assets/img/icons/fr/FRbleu.svg" alt="">
     </a>
-    <header class="header">
-        <a class="header__link" href="../en/index.html">
-            <img class="header__logo" src="/assets/img/icons/memary.svg" alt="Logo MeMary">
-        </a>
-        <button class="header__menu-btn menu-btn" id="menuToggle" aria-label="menu" aria-expanded="false"
-            aria-controls="mainNav">
-            <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
-            <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
-        </button>
-        <img src="/assets/img/images/header-contact.avif" alt="header contact" class="header__img" />
-    </header>
-    <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
-        <div class="menu-header">
-            <a class="header__link" href="../en/index.html">
-                <img class="header__logo" src="/assets/img/icons/memary.svg" alt="Logo MeMary">
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="/fr/index.html" class="logo-link">
+                <img src="/assets/img/icons/memary.svg" alt="MéMary">
             </a>
-            <button class="menu-close" id="menuClose" aria-label="Fermer le menu"><img src="/assets/img/icons/ferme.svg"
+            <button class="hamburger" aria-label="Ouvrir le menu"><img src="/assets/img/icons/menu.svg" alt="menu"
+                    width="18" height="18"></button>
+        </div>
+    </header>
+    <nav class="mobile-menu" aria-hidden="true">
+        <div class="menu-header">
+            <a href="/en/contactGB.html" class="menu-logo">
+                <img src="/assets/img/icons/memary.svg" alt="MéMary" style="height:32px;width:auto;">
+            </a>
+            <button class="menu-close" aria-label="Fermer le menu"><img src="/assets/img/icons/ferme.svg"
                     alt="fermer"></button>
         </div>
         <ul class="menu-list">
-            <li><a href="/en/contactGB.html">Contact</a></li>
-            <li><a href="/en/article1GB.html">The discovery of paired</a></li>
-            <li><a href="/en/article2GB.html">Calkins and the matilda effect</a></li>
-            <li><a href="/en/article3GB.html">The book</a></li>
-            <li><a href="/en/article4GB.html">The film</a></li>
-            <li><a href="/en/article5GB.html">Women scientists in books</a></li>
+            <li><a href="/fr/contactFR.html">Contact</a></li>
+            <li><a href="/fr/article1FR.html">La mémorisation en paire</a></li>
+            <li><a href="/fr/article2FR.html">Calkins et l’effet matilda</a></li>
+            <li><a href="/fr/article3FR.html">Le livre</a></li>
+            <li><a href="/fr/article4FR.html">Le film</a></li>
+            <li><a href="/fr/article5FR.html">Les femmes de sciences dans ...</a></li>
         </ul>
     </nav>
-    <main>
-        <button class="formulaire__btn">
-            <img src="/assets/img/icons/gb/btn-name.svg" alt="">
-        </button>
-        <button class="formulaire__btn">
-            <img src="/assets/img/icons/btn-email.svg" alt="">
-        </button>
-        <button class="formulaire__btn">
-            <img src="/assets/img/icons/btn-message.svg" alt="">
-        </button>
-        <p class="formulaire__txt">En utilisant ce formulaire, vous acceptez notre Politique de Confidentialité et nos
-            Conditions d'Utilisation.</p>
-        <button class="formulaire__btn">
-            <img src="/assets/img/icons/btn-tchek.svg" alt="">
-        </button>
-        <p class="formulaire__txt__tchek">J'accepte que vous conserviez mes informations conformément à votre politique
-            de confidentialité.</p>
-        <button class="btn">
-            <img src="/assets/img/icons/gb/btn-send.svg" alt="">
-        </button>
+    <section class="hero">
+        <img src="/assets/img/images/header-contact.avif" alt="hero contact" />
+    </section>
+    <div class="contact-form__group">
+        <label for="email" class="contact-form__label">Full name :</label>
+        <input type="email" id="email" name="email" class="contact-form__input" placeholder="Enter your text..."
+            required>
+    </div>
 
-        <div class="accordeon">
-            <p class="subtitle">Who We Are</p>
-            <button class="accordeon_btn">
-                About Section
-            </button>
-            <div class="accordeon__content"></div>
-            <p class="article__txt__item">
-                My name is Louise Langenfeld, I'm 18 years old. I'm a student in MMI (Multimedia and Internet
-                Professions). I'm
-                interested in visual things and I've often wondered how memory works. This project let me discover the
-                work of Mary
-                Whiton Calkins and learn about the Matilda Effect. Through my website, I share the work of this woman
-                who was very
-                important but never got proper recognition.
-                If you're interested in the Matilda Effect and women affected by it, my classmates' projects are
-                available in the "Other
-                Projects" section below.
-            </p>
-            <p class="article__txt__item">
-                This website is made for Mobile First. This means it works best on phones first. It must also be
-                ecoindex A. This means
-                this site must be very eco-friendly. MéMary is a site about memory. It also shows the work of a woman
-                affected by the
-                Matilda Effect. It will be in English to reach more people around the world.
-            </p>
-        </div>
-        </div>
-        <div class="accordeon">
-            <p class="subtitle">Need help with words?</p>
-            <button class="accordeon_btn">
-                Glossary
-            </button>
-            <div class="accordeon__content"></div>
-            <p class="article__txt__title">
-                1- Pioneer of paired memory
-            </p>
-            <li class="list__txt__item">Stimulus - Something outside or inside that makes a living thing react</li>
-            <li class="list__txt__item">Failure - Weakness, not being able to do something</li>
-            <li class="list__txt__item">Anterograde - a type of memory loss where you forget things right after they
-                happen</li>
-            <li class="list__txt__item">Recency - something that happened not long ago</li>
-            <li class="list__txt__item">Vividness - Being bright, having strong intensityg</li>
-            <li class="list__txt__item">Frequency - How often something happens</li>
-            <p class="article__txt__title">
-                2- Mary Whiton Calkins and the Matilda Effect
-            </p>
-            <li class="list__txt__item">Minimize - Make something seem less important</li>
-            <li class="list__txt__item">Factor - One part that helps create a result</li>
-            <li class="list__txt__item">Credit - Giving recognition to the original creator of information</li>
-        </div>
-        </div>
-        <div class="accordeon">
-            <p class="subtitle">Want to see more ?</p>
-            <button class="accordeon_btn">
-                Other Projects
-            </button>
-            <div class="accordeon__content"></div>
-            <p class="article__txt__item">
-                Check out my classmates' projects!
-            </p>
-            <p class="article__txt__item">
-                Nathan Batista Balanche's Project: This project honors Katherine Johnson, a NASA pioneer. It explores
-                the Matilda
-                Effect, which shows how women in science have been made invisible.
-            </p>
-            <a class="article_link"
-                href="https://www.figma.com/proto/mZkAxtPrF4qPsq98fTBpI0/Untitled?node-id=0-1&t=b6YfkSnMIrHuZsK8-1">
-                Clément Bertrand’s Project :
-            </a>
-            <p class="article__txt__item">
-                This project highlights forgotten woman scientists through the figure of Jocelyn Bell Burnell and the
-                film Contact. It
-                shows how fiction can become a space for recognition and symbolic justice, while offering an immersive
-                and poetic
-                experience at the heart of the universe.
-            </p>
-            <p class="article__txt__item">
-                Happy reading!
-            </p>
-        </div>
-        </div>
-        <button class="btn__home">
-            <a href="/en/index.html">
-                <img src="/assets/img/icons/gb/btn-home.svg" alt="button to home">
-            </a>
-        </button>
+    <div class="contact-form__group">
+        <label for="subject" class="contact-form__label">Email :</label>
+        <input type="text" id="subject" name="subject" class="contact-form__input" placeholder="Enter your text..."
+            required>
+    </div>
+
+    <div class="contact-form__group">
+        <label for="message" class="contact-form__label">Message :</label>
+        <textarea id="message" name="message" class="contact-form__textarea" placeholder="Enter your text..."
+            required></textarea>
+    </div>
+
+    <button type="submit" class="contact-section__btn" style="margin-top: 20px;">send</button>
+    </form>
+    </section>
+
+    <div class="annexe">
+        <h2 class="subtitle">Who We Are</h2>
+        <h1 class="title">
+            About Section
+        </h1>
+        <p class="article__txt__item">
+            My name is Louise Langenfeld, I'm 18 years old. I'm a student in MMI (Multimedia and Internet Professions). I'm
+            interested in visual things and I've often wondered how memory works. This project let me discover the work of Mary
+            Whiton Calkins and learn about the Matilda Effect. Through my website, I share the work of this woman who was very
+            important but never got proper recognition.
+            If you're interested in the Matilda Effect and women affected by it, my classmates' projects are available in the "Other
+            Projects" section below.
+        </p>
+        <p class="article__txt__item">
+            This website is made for Mobile First. This means it works best on phones first. It must also be ecoindex A. This means
+            this site must be very eco-friendly. MéMary is a site about memory. It also shows the work of a woman affected by the
+            Matilda Effect. It will be in English to reach more people around the world.
+        </p>
+    </div>
+    <div class="annexe">
+        <h2 class="subtitle">Need help with words?</h2>
+        <h1 class="title" aria-expanded="false">
+            Glossary
+        </h1>
+        <p class="article__txt__title">
+            1- Pioneer of paired memory
+        </p>
+        <li class="list__txt__item">Stimulus - Something outside or inside that makes a living thing react.</li>
+        <li class="list__txt__item">Failure - Weakness, not being able to do something</li>
+        <li class="list__txt__item">Anterograde - a type of memory loss where you forget things right after they happen</li>
+        <li class="list__txt__item">Recency - something that happened not long ago</li>
+        <li class="list__txt__item">Vividness - Being bright, having strong intensity</li>
+        <li class="list__txt__item">Frequency - How often something happens
+        </li>
+        <p class="article__txt__title">
+            2- Mary Whiton Calkins and the Matilda Effect
+        </p>
+        <li class="list__txt__item">Minimize - Make something seem less important</li>
+        <li class="list__txt__item">Factor - One part that helps create a result</li>
+        <li class="list__txt__item">Credit - Giving recognition to the original creator of information</li>
+    </div>
+    <div class="annexe">
+        <h2 class="subtitle">Want to see more ?</h2>
+        <h1 class="title" aria-expanded="false">
+            Other project
+        </h1>
+
+        <p class="article__txt__item">
+            Check out my classmates' projects!
+        </p>
+        <p class="article__txt__item">
+            Nathan Batista Balanche's Project: This project honors Katherine Johnson, a NASA pioneer. It explores the Matilda
+            Effect, which shows how women in science have been made invisible.
+        </p>
+        <a class="article_link"
+            href="https://www.figma.com/proto/mZkAxtPrF4qPsq98fTBpI0/Untitled?node-id=0-1&t=b6YfkSnMIrHuZsK8-1">
+            Clément Bertrand’s Project :
+        </a>
+        <p class="article__txt__item">
+            This project highlights forgotten woman scientists through the figure of Jocelyn Bell Burnell and the film Contact. It
+            shows how fiction can become a space for recognition and symbolic justice, while offering an immersive and poetic
+            experience at the heart of the universe.
+        </p>
+        <p class="article__txt__item">
+            Happy reading!
+        </p>
+    </div>
+
+    <button class="btn__home">
+        <a href="/fr/index.html">
+            <img src="/assets/img/icons/fr/btn-acceuil.svg" alt="bouton vers l'acceuil">
+        </a>
+    </button>
     </main>
-
     <footer class="footer">
-        <a href="/en/index.html" class="logo-link">
+        <a href="/fr/index.html" class="logo-link">
             <img src="/assets/img/icons/memary.svg" alt="MéMary" class="logo-img">
         </a>
-        <p class="footer__text">Project completed in 2025 as part of an educational exercise at the MMi department in
-            Montbéliard. Louise LANGENFELD A2 louiselangenfeld300@gmail.com</p>
+        <p class="footer__text">Project completed in 2025 as part of an educational exercise at the MMi department in Montbéliard.
+        Louise LANGENFELD A2
+         louiselangenfeld300@gmail.com</p>
         <a class="footer__logo">
             <img src="/assets/img/icons/mmi-blanc.svg" alt="logo mmi">
         </a>

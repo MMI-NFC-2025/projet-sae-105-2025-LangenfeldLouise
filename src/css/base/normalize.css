@@ -39,7 +39,12 @@ li {
 }
 
 h1
-h2
-h3 {
+h2 {
     font-family: var(--staatliches-regular);
+    }
+h3 {
+    font-family: var(--roboto);
+    margin-left: 20px;
+    color: var(--noir);
+    margin-right: 20px;
 }
