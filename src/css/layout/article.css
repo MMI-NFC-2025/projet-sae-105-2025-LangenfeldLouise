@@ -1,0 +1,31 @@
+/* Page article */
+.article {
+    padding: 20px;
+}
+
+.article__image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.article__caption {
+    font-size: 13px;
+    color: var(--bordeaux);
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.article__section-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 30px 0 15px;
+    color: var(--bordeaux);
+}
+
+.article__content {
+    font-size: 15px;
+    line-height: 25.5px;
+    margin-bottom: 20px;
+}

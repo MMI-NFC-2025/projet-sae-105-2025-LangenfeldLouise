@@ -1,14 +1,14 @@
 /* Collection 1 */
 :root {
     /* color */
-    --background: #eeeeee;
-    --black: #000000;
-    --black-blue: #041024;
-    --blue: #0d1782;
-    --green: #9dcba2;
-    --light: #ffffff;
-    --txt-green: #007224;
-    --gray: #d1d1d1;
+    --fond: #eeeeee;
+    --noir: #000000;
+    --bleu-fonce: #041024;
+    --bleu: #0d1782;
+    --vert: #9dcba2;
+    --blanc: #ffffff;
+    --vert-foncer: #007224;
+    --gris: #d1d1d1;
     /* number */
     --size-12: 0.75rem;
     --size-16: 1rem;
@@ -21,6 +21,14 @@
     --staatliches-regular: "Staatliches", sans-serif;
     --roboto: "Roboto", sans-serif;
 }
+
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 footer{
     background-color: var(--black-blue);

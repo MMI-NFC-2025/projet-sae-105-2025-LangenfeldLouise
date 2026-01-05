@@ -18,3 +18,26 @@
     width: 60px;
     height: auto;
 }
+
+.btn__home {
+    position: relative;
+    top: 10px;
+    left: 60%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border: transparent;
+}
+
+/* Bouton retour haut de page */
+.back-to-top {
+    background-color: var(--violet);
+    color: var(--beige);
+    padding: 15px 30px;
+    border-radius: 35px;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    margin: 30px auto;
+    cursor: pointer;
+}

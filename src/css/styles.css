@@ -9,10 +9,22 @@
 /* Layout */
 @import "layout/header.css";
 @import "layout/footer.css";
+@import "layout/hero.css";
+@import "layout/article.css";
 
 /* Components */
-@import "components/acordeon.css";
+@import "components/annexe.css";
 @import "components/bouton.css";
 @import "components/carousel.css";
 @import "components/liste.css";
 @import "components/menu.css";
+
+/* Importation */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap');
+
+/* Responsive */
+@media (max-width: 393px) {
+    .container {
+        max-width: 100%;
+    }
+}
