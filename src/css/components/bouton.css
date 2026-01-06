@@ -1,6 +1,6 @@
 .btn {
     margin: 0 auto;
-    padding: 2.25rem 1.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 8px;
     border: none;
     display: flex;
@@ -28,17 +28,4 @@
 
 .btn__link {
     font-size: 1.5em;
-}
-
-/* Bouton retour haut de page */
-.back-to-top {
-    background-color: var(--violet);
-    color: var(--beige);
-    padding: 22.5px 45px;
-    border-radius: 35px;
-    font-size: 27px;
-    text-align: center;
-    display: inline-block;
-    margin: 0 auto;
-    cursor: pointer;
 }

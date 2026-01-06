@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home En</title>
     <link rel="stylesheet" href="../src/css/styles.css">
-    <link rel="icones" type="image/png" href="/assets/img/icons/favicon/favicon-96x96.png" sizes="96*96" />
+    <link rel="icon" type="image/png" href="/assets/img/icons/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
@@ -59,24 +59,28 @@
             </ul>
         </nav>
     </header>
-    <section class="hero"><img src="/assets/img/images/gb/header-home.avif" alt="hero home" /></section>
+    <div class="hero"><img src="/assets/img/images/gb/header-home.avif" alt="hero home" /></div>
     <main>
         <ul class="u-list__articles">
             <li class="list__item">
                 <a class="list__link__article" href="/en/article1GB.html">
                     <img src="/assets/img/images/gb/home-1.avif" alt="Button to article 1">
+                </a>
             </li>
             <li class="list__item">
                 <a class="list__link__article" href="/en/article2GB.html">
                     <img src="/assets/img/images/gb/home-2.avif" alt="Button to article 2">
+                </a>
             </li>
             <li class="list__item">
                 <a class="list__link__article" href="/en/article3GB.html">
                     <img src="/assets/img/images/gb/home-3.avif" alt="Button to article 3">
+                </a>
             </li>
             <li class="list__item">
                 <a class="list__link__article" href="/en/article4GB.html">
                     <img src="/assets/img/images/gb/home-4.avif" alt="Button to article 4">
+                </a>
             </li>
             <li class="list__item">
                 <a class="list__link__article" href="/en/article5GB.html">
@@ -84,20 +88,18 @@
                 </a>
             </li>
         </ul>
-        <section>
-            <div class="carousel">
-                <h2 class="subtitle">timeline</h2>
+        <section class="carousel" aria-labelledby="carousel-heading">
+            <h2 class="subtitle">timeline</h2>
+            <div class="carousel">    
                 <div class="carousel__container" role="region" aria-live="polite">
                     <img src="/assets/img/images/gb/timeline.avif" alt="timeline" />
                 </div>
             </div>
         </section>
-        <button class="btn">
-            <h2 class="subtitle">Have a question ?</h2>
-            <a href="/en/contactGB.html">
-                <img src="/assets/img/icons/btn-contact.svg" alt="button to contact">
-            </a>
-        </button>
+        <p class="subtitle">have a question ?</p>
+        <a class="btn btn__link" href="/en/contactGB.html">
+            <img src="/assets/img/icons/btn-contact.svg" alt="button to contact">
+        </a>
     </main>
     <footer class="footer">
         <div class="footer__item">
