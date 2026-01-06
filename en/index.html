@@ -6,13 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home En</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap"
-        rel="stylesheet">
-
     <link rel="stylesheet" href="../src/css/styles.css">
     <link rel="icones" type="image/png" href="/assets/img/icons/favicon/favicon-96x96.png" sizes="96*96" />
     <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
@@ -22,58 +15,71 @@
 </head>
 
 <body>
-    <a class="header__langage" href="../fr/index.html"
-        onclick="document.cookie = 'nf_lang=en; path=/ ; SameSite=Strict'">
-        <img src="/assets/img/icons/gb/ENbleu.svg" alt="">
-    </a>
     <header class="header">
-        <a class="header__link" href="../en/index.html">
-            <img class="header__logo" src="/assets/img/icons/memary.svg" alt="Logo MeMary">
-        </a>
-        <button class="header__menu-btn menu-btn" id="menuToggle" aria-label="menu" aria-expanded="false"
-            aria-controls="mainNav">
-            <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
-            <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
-        </button>
-    </header>
-    <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
-        <div class="menu-header">
-            <a class="header__link" href="../en/index.html">
-                <img class="header__logo" src="/assets/img/icons/memary.svg" alt="Logo MeMary">
-            </a>
-            <button class="menu-close" id="menuClose" aria-label="Fermer le menu"><img src="/assets/img/icons/ferme.svg"
-                    alt="fermer"></button>
+
+        <div class="header__bar">
+            <div class="header__link__img">
+                <a class="header__link-logo" href="index.html">
+                    <img src="../assets/img/icons/memary.svg" alt="logo Mémary">
+                </a>
+                <a class="header__langage" href="../fr/index.html"
+                    onclick="document.cookie = 'nf_lang=en; path=/ ; SameSite=Strict'">
+                    <img src="/assets/img/icons/gb/ENbleu.svg" alt="">
+                </a>
+            </div>
+            <div class="header__menu__bar">
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false"
+                    aria-controls="mainNav">
+                    <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+                    <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+                </button>
+            </div>
         </div>
-        <ul class="menu-list">
-            <li><a href="/en/contactGB.html">Contact</a></li>
-            <li><a href="/en/article1GB.html">The discovery of paired</a></li>
-            <li><a href="/en/article2GB.html">Calkins and the matilda effect</a></li>
-            <li><a href="/en/article3GB.html">The book</a></li>
-            <li><a href="/en/article4GB.html">The film</a></li>
-            <li><a href="/en/article5GB.html">Women scientists in books</a></li>
-        </ul>
-    </nav>
+
+        <nav class="header__menu menu" id="mainNav" hidden>
+            <ul class="menu__main-list">
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/contactGB.html">contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/article1GB.html">The discovery of paired</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/article2GB.html">Calkins and the matilda effect</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/article3GB.html">The book</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/article4GB.html">The film</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/article5GB.html">Women scientists in books</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <section class="hero"><img src="/assets/img/images/gb/header-home.avif" alt="hero home" /></section>
     <main>
         <ul class="u-list__articles">
             <li class="list__item">
-                <a class="list__link" href="/en/article1GB.html">
+                <a class="list__link__article" href="/en/article1GB.html">
                     <img src="/assets/img/images/gb/home-1.avif" alt="Button to article 1">
             </li>
             <li class="list__item">
-                <a class="list__link" href="/en/article2GB.html">
+                <a class="list__link__article" href="/en/article2GB.html">
                     <img src="/assets/img/images/gb/home-2.avif" alt="Button to article 2">
             </li>
             <li class="list__item">
-                <a class="list__link" href="/en/article3GB.html">
+                <a class="list__link__article" href="/en/article3GB.html">
                     <img src="/assets/img/images/gb/home-3.avif" alt="Button to article 3">
             </li>
             <li class="list__item">
-                <a class="list__link" href="/en/article4GB.html">
+                <a class="list__link__article" href="/en/article4GB.html">
                     <img src="/assets/img/images/gb/home-4.avif" alt="Button to article 4">
             </li>
             <li class="list__item">
-                <a class="list__link" href="/en/article5GB.html">
+                <a class="list__link__article" href="/en/article5GB.html">
                     <img src="/assets/img/images/gb/home-5.avif" alt="Button to article 5">
                 </a>
             </li>
