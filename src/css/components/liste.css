@@ -12,12 +12,13 @@
 
 .list__link {
     display: block;
+    margin: 0;
 }
 
 .list__link img {
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 6px;
     display: block;
+    margin: 0 auto;
 }
-

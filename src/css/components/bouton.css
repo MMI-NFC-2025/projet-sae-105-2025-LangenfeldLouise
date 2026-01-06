@@ -1,6 +1,6 @@
 .btn {
-    margin: 2rem 1rem;
-    padding: 1.5rem 1rem;
+    margin: 0 auto;
+    padding: 2.25rem 1.5rem;
     border-radius: 8px;
     background: var(--green);
     border: none;
@@ -15,30 +15,31 @@
 }
 
 .btn a img {
-    width: 60px;
+    width: 90px;
     height: auto;
 }
 
 .btn__home {
-    position: relative;
-    top: 10px;
-    left: 60%;
-    width: auto;
+    margin-left: 190px;
+    width: 90px;
     height: auto;
     object-fit: contain;
     border: transparent;
-    margin-bottom: 10px;
+}
+
+.btn__link {
+    font-size: 1.5em;
 }
 
 /* Bouton retour haut de page */
 .back-to-top {
     background-color: var(--violet);
     color: var(--beige);
-    padding: 15px 30px;
+    padding: 22.5px 45px;
     border-radius: 35px;
-    font-size: 18px;
+    font-size: 27px;
     text-align: center;
     display: inline-block;
-    margin: 30px auto;
+    margin: 0 auto;
     cursor: pointer;
 }

@@ -1,8 +1,3 @@
-.carousel {
-    margin: 2rem 0;
-    padding: 0 1rem;
-}
-
 .title {
     font-family: var(--staatliches-regular);
     font-size: var(--size-24);
@@ -20,62 +15,58 @@
     margin-top: 1rem;
     text-align: center;
 }
-
-.carousel__container img {
+.carousel {
+    position: relative;
     width: 100%;
-    border-radius: 6px;
+    padding: 2rem 0;
+    box-sizing: border-box;
 }
 
-/**/
-/* Carrousel */
-.carrousel {
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 20px 11px;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-}
-
-.carrousel::-webkit-scrollbar {
-    height: 8px;
-}
-
-.carrousel::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.carrousel::-webkit-scrollbar-thumb {
-    background: var(--rose);
-    border-radius: 4px;
-}
-
-.carrousel__container {
+.carousel__wrapper {
     display: flex;
-    gap: 20px;
-    padding: 10px 0;
+    overflow-x: scroll;
+    margin-left: -1px;
+    margin-right: -1px;
+    position: relative;
 }
 
-.carrousel__item {
-    flex-shrink: 0;
+.carousel__controls {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
 }
 
-.carrousel__item:first-child {
-    width: 358px;
+.carousel__button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 45%;
+    right: 0;
 }
 
-.carrousel__item:not(:first-child) {
-    width: 194px;
+.carousel__button--prev {
+    left: 0;
 }
 
-.carrousel__item img {
-    width: 100%;
-    height: 261px;
-    object-fit: cover;
-    border-radius: 30px;
+.carousel__container {
+    display: flex;
+    gap: 16px;
+    overflow: scroll;
+    margin-left: -24px;
+    margin-right: -24px;
+    scroll-snap-type: x mandatory;
 }
 
-.carrousel__item-title {
-    margin-top: 10px;
-    font-size: 13px;
-    padding: 0 10px;
+.carousel__item {
+    flex: 1 0 100%;
+    scroll-snap-align: center;
+}
+
+.carousel__item img {
+    display: block;
 }
