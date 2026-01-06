@@ -2,7 +2,6 @@
     margin: 0 auto;
     padding: 2.25rem 1.5rem;
     border-radius: 8px;
-    background: var(--green);
     border: none;
     display: flex;
     flex-direction: column;
@@ -11,7 +10,7 @@
 }
 
 .btn h2 {
-    color: var(--black-blue);
+    color: var(--bleu);
 }
 
 .btn a img {

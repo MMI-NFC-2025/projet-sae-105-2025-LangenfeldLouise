@@ -12,60 +12,73 @@
     <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+    <script type="module" src="/src/js/script.js"></script>
 </head>
-
 <body>
-    <a class="header__langage" href="../fr/contactFR.html"
-        onclick="document.cookie = 'nf_lang=en; path=/ ; SameSite=Strict'">
-        <img src="/assets/img/icons/gb/ENbleu.svg" alt="">
-    </a>
-    <header class="site-header">
-        <div class="header-inner">
-            <a href="/fr/index.html" class="logo-link">
-                <img src="/assets/img/icons/memary.svg" alt="MéMary">
-            </a>
-            <button class="hamburger" aria-label="Ouvrir le menu"><img src="/assets/img/icons/menu.svg" alt="menu"
-                    width="18" height="18"></button>
+    <header class="header">
+        
+        <div class="header__bar">
+            <div class="header__link__img">
+                <a class="header__link-logo" href="index.html">
+                    <img src="../assets/img/icons/memary.svg" alt="logo Mémary">
+                </a>
+                <a class="header__langage" href="../fr/contactFR.html" onclick="document.cookie = 'nf_lang=en; path=/ ; SameSite=Strict'">
+                    <img src="/assets/img/icons/gb/ENbleu.svg" alt="">
+                </a>
+            </div>
+            <div class="header__menu__bar">
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+                    <span class="menu-btn__bar menu-btn__bar--top" aria-hidden="true"></span>
+                    <span class="menu-btn__bar menu-btn__bar--bottom" aria-hidden="true"></span>
+                </button>
+            </div>
         </div>
+        
+        <nav class="header__menu menu" id="mainNav" hidden>
+            <ul class="menu__main-list">
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/contactGB.html">contact</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/article1GB.html">The discovery of paired</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/article2GB.html">Calkins and the matilda effect</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/article3GB.html">The book</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/article4GB.html">The film</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="/en/article5GB.html">Women scientists in books</a>
+            </ul>
+        </nav>
     </header>
-    <nav class="mobile-menu" aria-hidden="true">
-        <div class="menu-header">
-            <a href="/en/contactGB.html" class="menu-logo">
-                <img src="/assets/img/icons/memary.svg" alt="MéMary" style="height:32px;width:auto;">
-            </a>
-            <button class="menu-close" aria-label="Fermer le menu"><img src="/assets/img/icons/ferme.svg"
-                    alt="fermer"></button>
+
+    <section class="hero"><img src="/assets/img/images/header-contact.avif" alt="hero contact" />
+    </section>
+    <section class="contact-form">
+        <div class="contact-form__group">
+            <label for="email" class="contact-form__label">Full name :</label>
+            <input type="email" id="email" name="email" class="contact-form__input" placeholder="Enter your text..."
+                required>
         </div>
-        <ul class="menu-list">
-            <li><a href="/fr/contactFR.html">Contact</a></li>
-            <li><a href="/fr/article1FR.html">La mémorisation en paire</a></li>
-            <li><a href="/fr/article2FR.html">Calkins et l’effet matilda</a></li>
-            <li><a href="/fr/article3FR.html">Le livre</a></li>
-            <li><a href="/fr/article4FR.html">Le film</a></li>
-            <li><a href="/fr/article5FR.html">Les femmes de sciences dans ...</a></li>
-        </ul>
-    </nav>
-    <section class="hero"><img src="/assets/img/images/header-contact.avif" alt="hero contact" /></section>
-    <div class="contact-form__group">
-        <label for="email" class="contact-form__label">Full name :</label>
-        <input type="email" id="email" name="email" class="contact-form__input" placeholder="Enter your text..."
-            required>
-    </div>
+        
+        <div class="contact-form__group">
+            <label for="subject" class="contact-form__label">Email :</label>
+            <input type="text" id="subject" name="subject" class="contact-form__input" placeholder="Enter your text..."
+                required>
+        </div>
 
-    <div class="contact-form__group">
-        <label for="subject" class="contact-form__label">Email :</label>
-        <input type="text" id="subject" name="subject" class="contact-form__input" placeholder="Enter your text..."
-            required>
-    </div>
-
-    <div class="contact-form__group">
-        <label for="message" class="contact-form__label">Message :</label>
-        <textarea id="message" name="message" class="contact-form__textarea" placeholder="Enter your text..."
-            required></textarea>
-    </div>
-
-    <button type="submit" class="contact-section__btn" style="margin-top: 20px;">send</button>
-    </form>
+        <div class="contact-form__group">
+            <label for="message" class="contact-form__label">Message :</label>
+            <textarea id="message" name="message" class="contact-form__textarea" placeholder="Enter your text..."
+                required></textarea>
+        </div>
+        <button type="submit" class="contact-section__btn" style="margin-top: 20px;">send</button>
+        </form>
     </section>
 
     <div class="annexe">
